@@ -10,6 +10,7 @@ Wrap anything you want to be processed between the tag pairs.
 
 Note: The `total` parameter lets you specify the number of words.
 
-Version 1.1
-******************
-- Updated plugin to be 2.0 compatible
+## Change Log
+
+- Version 1.1
+    - Updated plugin to be 2.0 compatible
