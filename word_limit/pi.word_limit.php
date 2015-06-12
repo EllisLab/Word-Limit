@@ -27,7 +27,7 @@ in this Software without prior written authorization from EllisLab, Inc.
 
 $plugin_info = array(
 						'pi_name'			=> 'Word Limiter',
-						'pi_version'		=> '1.1',
+						'pi_version'		=> '1.1.1',
 						'pi_author'			=> 'Rick Ellis',
 						'pi_author_url'		=> 'http://expressionengine.com/',
 						'pi_description'	=> 'Permits you to limit the number of words in some text',
@@ -53,16 +53,14 @@ class Word_limit {
 	 * Constructor
 	 *
 	 */
-	function Word_limit($str = '')
+	function __construct($str = '')
 	{
-		$this->EE =& get_instance();
-
-		$total = ( ! $this->EE->TMPL->fetch_param('total')) ? 500 :  $this->EE->TMPL->fetch_param('total');		
+		$total = ( ! ee()->TMPL->fetch_param('total')) ? 500 :  ee()->TMPL->fetch_param('total');		
 		$total = ( ! is_numeric($total)) ? 500 : $total;
 		
-		$str = ($str == '') ? $this->EE->TMPL->tagdata : $str;
+		$str = ($str == '') ? ee()->TMPL->tagdata : $str;
 		
- 		$this->return_data = $this->EE->functions->word_limiter($str, $total);
+ 		$this->return_data = ee()->functions->word_limiter($str, $total);
 	}
 	
 	// --------------------------------------------------------------------
@@ -75,7 +73,7 @@ class Word_limit {
 	 * @access	public
 	 * @return	string
 	 */
-	function usage()
+	public static function usage()
 	{
 		ob_start(); 
 		?>
@@ -92,6 +90,10 @@ class Word_limit {
 		Version 1.1
 		******************
 		- Updated plugin to be 2.0 compatible
+		
+		Version 1.1.1
+		******************
+		- Updated plugin to be 2.5 compatible and PHP 5.6 compatible
 
 		<?php
 		$buffer = ob_get_contents();
