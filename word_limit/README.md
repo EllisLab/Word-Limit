@@ -17,8 +17,12 @@ Permits you to limit the number of words in some text
 #### Parameters
 
 - `total` - lets you specify the number of words.
+- `strip_tags` - removes any HTML code before limiting words.
 
 ## Change Log
+
+### 2.1.0
+- Add 'strip_tags' parameter
 
 ### 2.0
 

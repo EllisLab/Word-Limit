@@ -48,7 +48,14 @@ class Word_limit {
 		$total = ( ! ee()->TMPL->fetch_param('total')) ? 500 :  ee()->TMPL->fetch_param('total');
 		$total = ( ! is_numeric($total)) ? 500 : $total;
 
+		$strip_tags = get_bool_from_string(ee()->TMPL->fetch_param('strip_tags', 'no'));
+
 		$str = ($str == '') ? ee()->TMPL->tagdata : $str;
+		
+		if ($strip_tags)
+		{
+			$str = strip_tags($str);
+		}
 
  		$this->return_data = ee()->functions->word_limiter($str, $total);
 	}
