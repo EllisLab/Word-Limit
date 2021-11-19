@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /*
-Copyright (C) 2004 - 2015 EllisLab, Inc.
+Copyright (C) 2004 - 2021 Packet Tide, LLC.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -16,13 +16,13 @@ all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-ELLISLAB, INC. BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+PACKET TIDE, LLC BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Except as contained in this notice, the name of EllisLab, Inc. shall not be
+Except as contained in this notice, the name of Packet Tide, LLC shall not be
 used in advertising or otherwise to promote the sale, use or other dealings
-in this Software without prior written authorization from EllisLab, Inc.
+in this Software without prior written authorization from Packet Tide, LLC.
 */
 
 
@@ -31,8 +31,8 @@ in this Software without prior written authorization from EllisLab, Inc.
  *
  * @package			ExpressionEngine
  * @category		Plugin
- * @author			EllisLab
- * @copyright		Copyright (c) 2004 - 2015, EllisLab, Inc.
+ * @author			Packet Tide
+ * @copyright		Copyright (c) 2004 - 2015, Packet Tide, LLC
  * @link			https://github.com/EllisLab/Word-Limit
  */
 class Word_limit {

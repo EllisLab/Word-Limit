@@ -21,6 +21,11 @@ Permits you to limit the number of words in some text
 
 ## Change Log
 
+### 2.1.1
+
+- Updated license
+- Added add-on icon
+
 ### 2.1.0
 - Add 'strip_tags' parameter
 
